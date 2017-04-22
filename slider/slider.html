@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <style type="text/css">
+        .wrapper {
+            position: relative;
+        }
+        #slider {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        #slider img {
+            width: 600px;
+            height: 400px;
+            display: none;
+            float: left;
+            top: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div id="slider">
+        <img id="1" src="images/image1.jpg">
+        <img id="2" src="images/image2.jpg">
+        <img id="3" src="images/image3.jpg">
+        <img id="4" src="images/image4.jpg">
+    </div>
+
+    <a href="#" class="left">Previous</a>
+    <a href="#" class="right">Next</a>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/slider.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+</body>
+</html>
