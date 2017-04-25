@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Etch a Sketch</h1>
+
+        <div class="info">
+
+            <a href="#create-popup" class="popup-link btn" id="create-btn" data-rel="popup">Create Grid</a>
+            <a href="#create-popup" class="btn" id="change-color">Change Color</a>
+            <a href="#clear-popup" class="btn" id="clear-btn">Clear Grid</a>
+        </div>
+        <div class="etch-wrapper">
+            <div class="etch-screen">
+
+            </div>
+            <div class="etch-controls">
+                <div class="knob">
+
+                </div>
+                <div class="knob">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<div id="clear-popup" class="popup">
+    <div class="popup-wrapper">
+        <div class="popup-content">
+            <p>
+                <label>Vertical Size:</label> <input type="text" name="">
+            </p>
+            <p>
+                <label>Horizontal Size:</label> <input type="text" name="">
+            </p>
+            <a href="#" id="clear-btn" class="btn">Clear New Grid</a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<div id="create-popup" class="popup">
+    <div class="popup-wrapper">
+        <div class="popup-content">
+            <p>
+                <label>Rows: </label> <input type="text" name="row" class="row">
+            </p>
+            <p>
+                <label>Columns:</label> <input type="text" name="column" class="column">
+            </p>
+            <button type="button" id="create-grid" class="btn" disabled>Create new grid</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="overlay"></div>
+<div id="save-popup" class="popup">
+    <div class="popup-wrapper">
+        <div class="popup-content">
+            <p>
+                Save popup!!
+            </p>
+        </div>
+    </div>
+</div>
