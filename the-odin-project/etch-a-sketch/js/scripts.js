@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
     createGrid(25, 25);
-    draw();
+    draw("000000");
+
 
     $("#create-grid").on('click', function(e) {
         var row = $(".row").val();
@@ -46,26 +47,19 @@ function createGrid(row, col){
     })
 }
 
-function draw(bgcolor, opacity) {
-    console.log("bgcolor is... " + bgcolor);
-    var currentOpacity = opacity;
-    console.log("currentOpacity is : " + currentOpacity);
 
-    /*if (currentOpacity == 0){
-        console.log("Turtle");
-    } else {*/
-        $(".etch-screen").on("mouseover", "div", function () {
-            if ($(this).is(".box")) {
-                $(this).css("background-color", "#" + bgcolor);
-                var opacity = parseFloat($(this).css("opacity"));
-                console.log("before opacity is " + currentOpacity);
-                opacity = opacity + .25;
-                console.log("after opacity is " + currentOpacity);
-                $(this).css("opacity", opacity);
-                console.log("");
-            }
-        });
-    /*}*/
+function draw(bgcolor, count) {
+    var count = 0;
+
+    $(".etch-screen").on("mouseover", "div", function () {
+        if ($(this).is(".box")) {
+            $(this).css("background-color", "#" + bgcolor);
+            var opacity = parseFloat($(this).css("opacity"));
+            opacity = opacity + .25;
+
+            $(this).css("opacity", opacity);
+        }
+    });
 }
 
 function changeColor(){
@@ -82,6 +76,4 @@ function changeColor(){
             $(this).css("background-color", "#" + newHex);
         }
     })
-
-    /*draw(newHex, 0);*/
 }

@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f602489c-ed1e-4a2f-8272-c7101d3aa151" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider/images/image1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider/images/image2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider/images/image3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider/images/image4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/scripts.js" afterPath="$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/scripts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +41,8 @@
       <file leaf-file-name="popup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="204">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -58,8 +51,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -78,8 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lala</find>
-      <find>create-btn</find>
       <find>varInOtherFunc</find>
       <find>inother</find>
       <find>block</find>
@@ -108,6 +99,8 @@
       <find>changecolor</find>
       <find>x</find>
       <find>draw(</find>
+      <find>draw</find>
+      <find>changeColor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,8 +133,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="603" />
-    <option name="y" value="100" />
+    <option name="x" value="411" />
+    <option name="y" value="98" />
     <option name="width" value="1276" />
     <option name="height" value="855" />
   </component>
@@ -336,7 +329,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492563527151</updated>
       <workItem from="1492563528498" duration="11014000" />
-      <workItem from="1492740632306" duration="57856000" />
+      <workItem from="1492740632306" duration="61543000" />
     </task>
     <task id="LOCAL-00001" summary="Created a slider with hover state and manual controls.">
       <created>1492829463867</created>
@@ -345,14 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492829463867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Separated popup javascript from scripts.js.&#10;Changing colors no longer increases the opacity.">
+      <created>1493094107887</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493094107887</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68870000" />
+    <option name="totallyTimeSpent" value="72557000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="603" y="100" width="1276" height="855" extended-state="0" />
+    <frame x="411" y="98" width="1276" height="855" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -382,7 +382,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a slider with hover state and manual controls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a slider with hover state and manual controls." />
+    <MESSAGE value="Separated popup javascript from scripts.js.&#10;Changing colors no longer increases the opacity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated popup javascript from scripts.js.&#10;Changing colors no longer increases the opacity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -468,16 +469,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/the-odin-project/etch-a-sketch/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
           <folding />
         </state>
       </provider>
