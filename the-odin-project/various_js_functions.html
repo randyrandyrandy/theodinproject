@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var numberList = [1, 2, 3, 4, 5];
+        console.log("The highest number in " + numberList.join(', ') + " is " + my_max(numberList));
+        console.log("Vowels in the word Turtle is " + vowel_count("turtle"));
+        console.log("turtle in reverse is " + reverse("turtle"));
+    });
+
+    function my_max(array){
+        var maxNum = 0;
+        for (i=0; i<array.length;i++){
+            if (array[i] > maxNum){
+                maxNum = array[i];
+            }
+        }
+        return maxNum;
+    }
+
+    function vowel_count(word){
+        var vowel = ["a", "e", "i", "o", "u"];
+        var vowelCount = 0;
+        for (i=0; i<word.length; i++) {
+            for (j=0; j<vowel.length; j++){
+                if (word.charAt(i).toLowerCase().includes(vowel[j])) {
+                    vowelCount++;
+                }
+            }
+        }
+        return vowelCount;
+    }
+
+    function reverse(word){
+        var wordArray = word.split("");
+        var reverseArray = [];
+        for (i=wordArray.length; wordArray.length > 0; i--){
+            reverseArray.push(wordArray.pop());
+        }
+        reverseArray = reverseArray.toString();
+        return reverseArray;
+    }
+</script>
+</body>
+</html>
