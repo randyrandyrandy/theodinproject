@@ -7,30 +7,84 @@ $(document).ready(function(){
     var lastOperator;
     var count = 0;
 
-
     $("body").on("click", ".num", function(){
-
         pushedNum += $(this).text();
         $(".display").text(pushedNum);
+    });
 
-        numbers.push(pushedNum);
-        lastNum = numbers.slice(-1);
-        lastOperator = operatorList.slice(-1)[0];
+    $(".operator").on("click", function() {
 
-        // Store first number to result.
-        if (operatorList.length == 0) {
-            result = lastNum;
+        if (pushedNum == "") {
+            pushedNum = 0;
         }
+            operatorList.push($(this).text());
+            numbers.push(pushedNum);
+            lastNum = numbers.slice(-1);
+            lastOperator = operatorList.slice(-2)[0];
 
+            console.log("lastNum is " + lastNum);
+            console.log("lastOperator is " + lastOperator);
+            console.log("numbers is " + numbers);
+            console.log("operatorList is " + operatorList);
+
+            console.log(parseFloat(result) + " ... " + parseFloat(lastNum));
+
+
+            switch (lastOperator) {
+                case "+":
+                    result = add(parseFloat(result), parseFloat(lastNum));
+                    break;
+                case "-":
+                    if (count > 0) {
+                        result = subtract(parseFloat(result), parseFloat(lastNum));
+                    } else {
+                        result = pushedNum;
+                    }
+                    break;
+                case "*":
+                    if (count > 0) {
+                        result = multiply(parseFloat(result), parseFloat(lastNum));
+                    } else {
+                        result = pushedNum;
+                    }
+                    break;
+                case "/":
+                    if (count > 0) {
+                        result = divide(parseFloat(result), parseFloat(lastNum));
+                    } else {
+                        result = pushedNum;
+                    }
+                    break;
+            }
+
+            console.log("result is " + result);
+
+            console.log("");
+            if (count > 0) {
+                $(".display").text(result);
+            };
+
+            count++;
+
+        pushedNum = "";
+    });
+
+    $("#equal").on("click", function() {
+        numbers.push(pushedNum);
+        lastNum = $(".display").text();
+        lastOperator = operatorList.slice(-1)[0];
 
         switch (lastOperator) {
             case "+":
-                result = add(parseFloat(result), parseFloat(lastNum));
+                if (count > 0) {
+                    result = add(parseFloat(result), parseFloat(lastNum));
+                    console.log("it was a plus!!");
+                }
                 break;
             case "-":
-                console.log("result is " + result);
-                console.log("lastNum is " + lastNum);
-                result = subtract(parseFloat(result), parseFloat(lastNum));
+                if (count > 0) {
+                    result = subtract(parseFloat(result), parseFloat(lastNum));
+                }
                 break;
             case "*":
                 result = multiply(parseFloat(result), parseFloat(lastNum));
@@ -39,18 +93,7 @@ $(document).ready(function(){
                 result = divide(parseFloat(result), parseFloat(lastNum));
                 break;
         }
-    });
 
-    $(".operator").on("click", function() {
-        operatorList.push($(this).text());
-        pushedNum = "";
-        if (count > 0){
-            $(".display").text(result);
-        }
-        count++;
-    });
-
-    $("#equal").on("click", function() {
         $(".display").text(result);
         pushedNum = "";
     });

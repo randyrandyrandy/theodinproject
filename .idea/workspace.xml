@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f602489c-ed1e-4a2f-8272-c7101d3aa151" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/calculator/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/calculator/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/calculator/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/the-odin-project/various_js_functions.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the-odin-project/calculator/js/scripts.js" afterPath="$PROJECT_DIR$/the-odin-project/calculator/js/scripts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,18 +41,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/the-odin-project/calculator/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="various_js_functions.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/the-odin-project/various_js_functions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="321">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -74,7 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hover</find>
       <find>lol</find>
       <find>newopac</find>
       <find>opacityChanger</find>
@@ -104,6 +90,7 @@
       <find>parseint</find>
       <find>button</find>
       <find>count</find>
+      <find>operatorlist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,10 +127,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="512" />
-    <option name="y" value="134" />
+    <option name="x" value="541" />
+    <option name="y" value="81" />
     <option name="width" value="1276" />
-    <option name="height" value="724" />
+    <option name="height" value="896" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -337,7 +324,7 @@
       <updated>1492563527151</updated>
       <workItem from="1492563528498" duration="11014000" />
       <workItem from="1492740632306" duration="77095000" />
-      <workItem from="1493491316955" duration="15151000" />
+      <workItem from="1493491316955" duration="29643000" />
     </task>
     <task id="LOCAL-00001" summary="Created a slider with hover state and manual controls.">
       <created>1492829463867</created>
@@ -360,14 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1493172658282</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Worked on calculator.">
+      <created>1493518247127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493518247127</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103260000" />
+    <option name="totallyTimeSpent" value="117752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="512" y="134" width="1276" height="724" extended-state="0" />
+    <frame x="541" y="81" width="1276" height="896" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -398,7 +392,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a slider with hover state and manual controls." />
     <MESSAGE value="Separated popup javascript from scripts.js.&#10;Changing colors no longer increases the opacity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Separated popup javascript from scripts.js.&#10;Changing colors no longer increases the opacity." />
+    <MESSAGE value="Worked on calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on calculator." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -531,14 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/the-odin-project/calculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/the-odin-project/calculator/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -547,10 +534,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/the-odin-project/calculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/the-odin-project/calculator/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="321">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
